@@ -1,3 +1,4 @@
 # API For Rest
-##apiforrest.com
+apiforrest.com  
+  
 A collection of public APIs to power your data science.
