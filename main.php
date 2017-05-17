@@ -1,9 +1,15 @@
 <?php
  
-Hook('User Is Not Logged In','PublicPage();');
+Hook('User Is Not Logged In - Before Presentation','PublicPageBefore();');
+
+function PublicPageBefore(){
+  Nav('main-not-logged-in','link','Explore','/explore');
+}
+
+
+Hook('User Is Not Logged In - Presentation','PublicPage();');
 
 function PublicPage(){
-  Nav('main-not-logged-in','link','Explore','/explore');
   switch(path(0)){
     case 'login':
       PromptForLogin();
