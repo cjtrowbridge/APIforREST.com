@@ -1,3 +1,2 @@
-# API for REST  
-  
-A collection of public APIs to power your data science.
+# manyweiners
+This is a site built in Astria which allows you to see nearby Grindr users or search a particular location.
